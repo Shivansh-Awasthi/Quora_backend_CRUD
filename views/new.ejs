@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Quora</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav class="nav-links">
+            <a href="/posts">Home</a>
+            <a href="/posts">Posts</a>
+            <a>Profile</a>
+            <a>Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Create a New Post</h2>
+            <form method="post" action="/posts">
+                <input type="text" placeholder="Enter Username" name="username" required> <br> <br>
+                <textarea name="content" placeholder="What's on your mind..." cols="30" rows="10" required></textarea> <br> <br>
+                <button class="btn submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

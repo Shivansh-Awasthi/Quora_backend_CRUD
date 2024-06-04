@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Quora</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/posts">Posts</a>
+            <a href="/profile">Profile</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="edit-container">
+        <h2>Edit your Post</h2>
+        <p>Post id: <%= post.id %> </p>
+        <p>Post username: @<%= post.username %> </p>
+        <form method="POST" action="/posts/<%= post.id %>?_method=PATCH">
+            <textarea rows="7" cols="50" name="content"><%= post.content %></textarea>
+            <br>
+            <button class="submit-btn">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
