@@ -98,3 +98,5 @@ gulp.task('default', function () {
 gulp.task('build', function () {
     // Define Cloudflare Pages build actions here
 });
+
+exports.default = gulp.series('build');
