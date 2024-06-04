@@ -5,6 +5,7 @@ const port = 3000;
 const path = require("path");
 const { v4: uuidv4 } = require('uuid');
 const methodOverride = require("method-override");
+const gulp = require('gulp');
 
 
 
@@ -83,3 +84,17 @@ app.delete("/posts/:id", (req,res)=>{
 app.listen(port, ()=>{
     console.log(`Server is running on port: ${3000}`)
 })
+
+
+//DEPLOY
+
+
+// Define default Gulp task
+gulp.task('default', function () {
+    // Define default task actions here
+});
+
+// Define Cloudflare Pages build task
+gulp.task('build', function () {
+    // Define Cloudflare Pages build actions here
+});
