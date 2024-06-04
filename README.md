@@ -23,7 +23,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/quora-clone.git
+git clone https://github.com/Shivansh-Awasthi/Quora_backend_CRUD.git
 Navigate to the project directory:
 bash
 Copy code
@@ -65,9 +65,6 @@ Edit Post
 
 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for review.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgements
 This project was inspired by Quora.
