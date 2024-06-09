@@ -15,8 +15,8 @@
             <input type="text" placeholder="Search...">
         </div>
         <nav class="nav-links">
-            <a href="/posts">Home</a>
-            <a href="/posts">Posts</a>
+            <a href="/">Home</a>
+            <a href="/">Posts</a>
             <a>Profile</a>
             <a>Logout</a>
         </nav>
@@ -32,16 +32,16 @@
                     <%= post.content %>
                 </h4>
                 <br>
-                <a class="btn detail-btn" href="http://localhost:3000/posts/<%= post.id %>">See in detail</a>
-                <a class="btn edit-btn" href="http://localhost:3000/posts/<%= post.id %>/edit">Edit</a>
-                <form method="POST" action="/posts/<%= post.id %>?_method=DELETE" style="display:inline;">
+                <a class="btn detail-btn" href="http://localhost:3000/<%= post.id %>">See in detail</a>
+                <a class="btn edit-btn" href="http://localhost:3000/<%= post.id %>/edit">Edit</a>
+                <form method="POST" action="/<%= post.id %>?_method=DELETE" style="display:inline;">
                     <button class="btn delete-btn">Delete Post</button>
                 </form>
             </div>
         <% } %>
 
         
-        <a class="btn new-post-btn" href="http://localhost:3000/posts/new">Create New Post</a>
+        <a class="btn new-post-btn" href="http://localhost:3000/new">Create New Post</a>
     </main>
 </body>
 </html>
